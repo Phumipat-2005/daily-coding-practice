@@ -6,8 +6,13 @@
 
 | # | Problem | Difficulty | Solution | Key Concepts / Methods |
 |---|---|:---:|:---:|---|
-| 1 | [Multiply](https://www.codewars.com/kata/50654dd896325a242a000038) | `8 kyu` | [multiply.js](./codewars-javascript/8kyu/multiply.js) | Basic Syntax, `return` |
+| 1 | [Multiply](https://www.codewars.com/kata/50654ddff44f800200000004) | `8 kyu` | [multiply.js](./codewars-javascript/8kyu/multiply.js) | Basic Syntax, `return` |
 | 2 | [Even or Odd](https://www.codewars.com/kata/53da3dbb4a5168369a0000fe) | `8 kyu` | [evenOrOdd.js](./codewars-javascript/8kyu/evenOrOdd.js) | Modulo `%`, Ternary Operator |
 | 3 | [Reversed Strings](https://www.codewars.com/kata/5168bb5dfe9a00b126000018) | `8 kyu` | [reversedString.js](./codewars-javascript/8kyu/reversedString.js) | `.split()`, `.reverse()`, `.join()` |
 | 4 | [Return Negative](https://www.codewars.com/kata/55685cd7ad70877c23000102) | `8 kyu` | [returnNegative.js](./codewars-javascript/8kyu/returnNegative.js) | `-num`, `Math.abs()` |
 | 5 | [Convert a Number to a String!](https://www.codewars.com/kata/5265326f5fda8eb1160004c8) | `8 kyu` | [convertNumberToString.js](./codewars-javascript/8kyu/convertNumberToString.js) | `String()`, `.toString()` |
+| 6 | [Convert boolean values to strings 'Yes' or 'No'](https://www.codewars.com/kata/53369039d7ab3ac506000467) | `8 kyu` | [convertBooleanValuesToStringsYesOrNo.js](./codewars-javascript/8kyu/convertBooleanValuesToStringsYesOrNo.js) | Ternary Operator `? :`, Object Lookup |
+| 7 | [Opposite number](https://www.codewars.com/kata/56dec885c54a926dcd001095) | `8 kyu` | [oppositeNumber.js](./codewars-javascript/8kyu/oppositeNumber.js) | Additive Inverse (`-number`) |
+| 8 | [Sum of positive](https://www.codewars.com/kata/5715eaedb436cf5606000381) | `8 kyu` | [sumOfPositive.js](./codewars-javascript/8kyu/sumOfPositive.js) | `for...of`, `.filter()`, `.reduce()` |
+| 9 | [String repeat](https://www.codewars.com/kata/57a0e5c372292dd76d000d7e) | `8 kyu` | [stringRepeat.js](./codewars-javascript/8kyu/stringRepeat.js) | `for` loop, `.repeat()` |
+| 10 | [Remove First and Last Character](https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0) | `8 kyu` | [removeFirstAndLastCharacter.js](./codewars-javascript/8kyu/removeFirstAndLastCharacter.js) | `.slice(1, -1)` |
