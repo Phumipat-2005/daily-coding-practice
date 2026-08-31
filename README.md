@@ -16,3 +16,6 @@
 | 8 | [Sum of positive](https://www.codewars.com/kata/5715eaedb436cf5606000381) | `8 kyu` | [sumOfPositive.js](./codewars-javascript/8kyu/sumOfPositive.js) | `for...of`, `.filter()`, `.reduce()` |
 | 9 | [String repeat](https://www.codewars.com/kata/57a0e5c372292dd76d000d7e) | `8 kyu` | [stringRepeat.js](./codewars-javascript/8kyu/stringRepeat.js) | `for` loop, `.repeat()` |
 | 10 | [Remove First and Last Character](https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0) | `8 kyu` | [removeFirstAndLastCharacter.js](./codewars-javascript/8kyu/removeFirstAndLastCharacter.js) | `.slice(1, -1)` |
+| 11 | [Square(n) Sum](https://www.codewars.com/kata/515e271a311df0350d00000f) | `8 kyu` | [squareSum.js](./codewars-javascript/8kyu/square(n)Sum.js) | `** 2` Exponentiation, `.reduce()` |
+| 12 | [Find the smallest integer in the array](https://www.codewars.com/kata/55a2d7ebe362935a210000b2) | `8 kyu` | [findSmallestInt.js](./codewars-javascript/8kyu/findTheSmallestIntegerInTheArray.js) | `Math.min()`, Spread Operator `...`, `.sort((a,b)=>a-b)` |
+| 13 | [Convert a String to a Number!](https://www.codewars.com/kata/544675c6f971f7399a000e79) | `8 kyu` | [convertStringToNumber.js](./codewars-javascript/8kyu/convertStringToNumber.js) | `Number()`, Unary Plus `+str`, `parseInt()` |
