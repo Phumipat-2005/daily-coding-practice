@@ -19,3 +19,6 @@
 | 11 | [Square(n) Sum](https://www.codewars.com/kata/515e271a311df0350d00000f) | `8 kyu` | [squareSum.js](./codewars-javascript/8kyu/square(n)Sum.js) | `** 2` Exponentiation, `.reduce()` |
 | 12 | [Find the smallest integer in the array](https://www.codewars.com/kata/55a2d7ebe362935a210000b2) | `8 kyu` | [findSmallestInt.js](./codewars-javascript/8kyu/findTheSmallestIntegerInTheArray.js) | `Math.min()`, Spread Operator `...`, `.sort((a,b)=>a-b)` |
 | 13 | [Convert a String to a Number!](https://www.codewars.com/kata/544675c6f971f7399a000e79) | `8 kyu` | [convertStringToNumber.js](./codewars-javascript/8kyu/convertStringToNumber.js) | `Number()`, Unary Plus `+str`, `parseInt()` |
+| 14 | [Function 1 - hello world](https://www.codewars.com/kata/523b4cc8009e86d6a900000a) | `8 kyu` | [function1HelloWorld.js](./codewars-javascript/8kyu/functionHelloWorld.js) | Arrow Function `() => ...`, String Return |
+| 15 | [Grasshopper - Summation](https://www.codewars.com/kata/55d24f55d7dd2965a00000cd) | `8 kyu` | [grasshopperSummation.js](./codewars-javascript/8kyu/grasshopperSummation.js) | `for` loop, Gauss Formula `(n*(n+1))/2`, Recursion |
+| 16 | [Counting sheep...](https://www.codewars.com/kata/54edbc7200b811e956000556) | `8 kyu` | [countingSheep.js](./codewars-javascript/8kyu/countingSheep.js) | Strict Equality `===`, `.filter(Boolean).length` |
