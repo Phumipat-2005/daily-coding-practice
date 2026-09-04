@@ -22,3 +22,5 @@
 | 14 | [Function 1 - hello world](https://www.codewars.com/kata/523b4cc8009e86d6a900000a) | `8 kyu` | [function1HelloWorld.js](./codewars-javascript/8kyu/functionHelloWorld.js) | Arrow Function `() => ...`, String Return |
 | 15 | [Grasshopper - Summation](https://www.codewars.com/kata/55d24f55d7dd2965a00000cd) | `8 kyu` | [grasshopperSummation.js](./codewars-javascript/8kyu/grasshopperSummation.js) | `for` loop, Gauss Formula `(n*(n+1))/2`, Recursion |
 | 16 | [Counting sheep...](https://www.codewars.com/kata/54edbc7200b811e956000556) | `8 kyu` | [countingSheep.js](./codewars-javascript/8kyu/countingSheep.js) | Strict Equality `===`, `.filter(Boolean).length` |
+| 17 | [Vowel Count](https://www.codewars.com/kata/54ff3102c1bad923760001f3) | `7 kyu` | [vowelCount.js](./codewars-javascript/7kyu/vowelCount.js) | RegEx `/[aeiou]/g`, `.match() \|\| []`, `.includes()` |
+| 18 | [Disemvowel Trolls](https://www.codewars.com/kata/52fba66badcd10859f00097e) | `7 kyu` | [disemvowelTrolls.js](./codewars-javascript/7kyu/disemvowelTrolls.js) | `for...of`, `!vowels.includes()`, String Immutability, `.replace(/[aeiou]/gi, '')` |
