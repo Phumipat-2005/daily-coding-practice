@@ -24,3 +24,4 @@
 | 16 | [Counting sheep...](https://www.codewars.com/kata/54edbc7200b811e956000556) | `8 kyu` | [countingSheep.js](./codewars-javascript/8kyu/countingSheep.js) | Strict Equality `===`, `.filter(Boolean).length` |
 | 17 | [Vowel Count](https://www.codewars.com/kata/54ff3102c1bad923760001f3) | `7 kyu` | [vowelCount.js](./codewars-javascript/7kyu/vowelCount.js) | RegEx `/[aeiou]/g`, `.match() \|\| []`, `.includes()` |
 | 18 | [Disemvowel Trolls](https://www.codewars.com/kata/52fba66badcd10859f00097e) | `7 kyu` | [disemvowelTrolls.js](./codewars-javascript/7kyu/disemvowelTrolls.js) | `for...of`, `!vowels.includes()`, String Immutability, `.replace(/[aeiou]/gi, '')` |
+| 19 | [Highest and Lowest](https://www.codewars.com/kata/554b4ac871d6813a03000035) | `7 kyu` | [highestAndLowest.js](./codewars-javascript/7kyu/highestAndLowest.js) | `.split(' ')`, `Math.max()`, `Math.min()`, Spread Operator `...`, Template Literals |
