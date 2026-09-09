@@ -195,3 +195,63 @@
 | `typeof x === 'number'` | ตรวจสอบว่าข้อมูลมีประเภทเป็นตัวเลขหรือไม่ | `typeof 123 === 'number'` | `true` |
 | `Number.isInteger(val)` | ตรวจสอบว่าเป็นข้อมูลตัวเลขและเป็นจำนวนเต็ม | `Number.isInteger('15')` | `false` |
 | `arr.filter(predicate)` | สร้าง Array ใหม่ที่มีเฉพาะสมาชิกที่ผ่านเงื่อนไข | `[1, 'a', 2].filter(x => typeof x === 'number')` | `[1, 2]` |
+
+---
+
+### 16. การจัดเรียงตัวเลขจากมากไปน้อย (Descending Sort & Type Pipeline)
+* **ข้อจำกัดของ Data Types:**
+  * ข้อมูลชนิด Number ไม่มี Method `.split()` หรือ `.sort()` ให้ใช้โดยตรง
+  * ต้องแปลงเป็น String ด้วย `String(n)` $\rightarrow$ หั่นเป็น Array ด้วย `.split('')` $\rightarrow$ จัดเรียง $\rightarrow$ ประกบกลับด้วย `.join('')` $\rightarrow$ แปลงกลับเป็นตัวเลขด้วย `Number()`
+* **การใช้งาน `.sort((a, b) => b - a)`:**
+  * ฟังก์ชันเปรียบเทียบตัวเลข: ถ้านำ `b - a` จะได้ผลลัพธ์เรียงจาก **มากไปน้อย (Descending)**
+  * *ข้อควรระวังของ `.sort()` เปล่าๆ:* ตามค่าเริ่มต้นจะเรียงตามรหัสตัวอักษร (Lexicographical) ซึ่งอาจให้ผลลัพธ์ผิดพลาดหากมีตัวเลขหลายหลักปนมา
+  * คำสั่ง `.sort()` ใช้งานได้กับ Array เท่านั้น ห้ามเรียกจาก String และเป็น Method ฟังก์ชัน ไม่ใช่บล็อกคำสั่ง (ห้ามเปิดปีกกาต่อท้าย)
+* **ตัวอย่างโค้ด:**
+  ```javascript
+  function descendingOrder(n) {
+    return Number(String(n).split('').sort((a, b) => b - a).join(''));
+  }
+  ```
+
+---
+
+### 17. การตรวจสอบกำลังสองสมบูรณ์ (Square Number & Math Operations)
+* **นิยาม Perfect Square:**
+  * คือจำนวนเต็มที่เกิดจากจำนวนเต็มยกกำลังสอง ($m \times m = n$)
+  * เลขติดลบ ($n < 0$) ไม่มีทางเป็น Square Number ในระบบจำนวนจริง
+* **การคำนวณด้วย `Math.sqrt()`:**
+  * คำสั่ง `Math.sqrt(n)` ใช้ถอดรากที่สอง (Square Root) หากค่าติดลบจะคืนค่า `NaN`
+* **เทคนิคการตรวจสอบจำนวนเต็ม:**
+  * **วิธีที่ 1:** ใช้ `Number.isInteger(Math.sqrt(n))` ตรวจสอบโดยตรง (หากเป็นทศนิยมหรือ `NaN` จะได้ `false`)
+  * **วิธีที่ 2:** ตรวจสอบเศษด้วย Modulo `Math.sqrt(n) % 1 === 0`
+* **ตัวอย่างโค้ด:**
+  ```javascript
+  const isSquare = n => Number.isInteger(Math.sqrt(n));
+  ```
+
+---
+
+### 18. การคำนวณตำแหน่งและตัดแบ่งข้อความ (Index Math & String Slicing)
+* **การหาตำแหน่งกึ่งกลาง (Midpoint Calculation):**
+  * ใช้ `Math.floor(str.length / 2)` เพื่อหาตำแหน่ง Index กลางและปัดเศษทศนิยมลง
+* **การแยกกรณีความยาวคู่และคี่ด้วย Modulo:**
+  * **ความยาวคี่ (`length % 2 !== 0`):** ดึงตัวอักษรตรงกลาง 1 ตัวด้วย `str[mid]`
+  * **ความยาวคู่ (`length % 2 === 0`):** ดึงตัวอักษรตรงกลาง 2 ตัวด้วย `str.slice(mid - 1, mid + 1)`
+* **ตัวอย่างโค้ด:**
+  ```javascript
+  function getMiddle(s) {
+    const mid = Math.floor(s.length / 2);
+    return s.length % 2 === 0 ? s.slice(mid - 1, mid + 1) : s[mid];
+  }
+  ```
+
+---
+
+### 19. ตารางสรุป Methods เพิ่มเติม (7 kyu Cheat Sheet Part 6)
+
+| คำสั่ง / ไวยากรณ์ | หน้าที่ | ตัวอย่างการใช้งาน | ผลลัพธ์ |
+|---|---|---|---|
+| `arr.sort((a, b) => b - a)` | เรียงลำดับตัวเลขใน Array จากมากไปน้อย | `[1, 5, 2].sort((a, b) => b - a)` | `[5, 2, 1]` |
+| `Math.sqrt(n)` | ถอดรากที่สองของตัวเลข | `Math.sqrt(25)` | `5` |
+| `Math.floor(num)` | ปัดเศษตัวเลขทศนิยมลงให้เป็นจำนวนเต็ม | `Math.floor(3.7)` | `3` |
+| `str.slice(start, end)` | สกัดข้อความตั้งแต่ตำแหน่ง start ถึงก่อน end | `"middle".slice(2, 4)` | `"dd"` |
