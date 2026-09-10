@@ -30,3 +30,4 @@
 | 22 | [Descending Order](https://www.codewars.com/kata/5467e4d82edf8bbf40000155) | `7 kyu` | [descendingOrder.js](./codewars-javascript/7kyu/descendingOrder.js) | `String()`, `.split('')`, `.sort((a, b) => b - a)`, `.join('')`, `Number()` |
 | 23 | [You're a square!](https://www.codewars.com/kata/54c27a33fb7da0db0100040e) | `7 kyu` | [youAreASquare.js](./codewars-javascript/7kyu/youAreASquare.js) | `Math.sqrt()`, `Number.isInteger()`, Modulo `% 1 === 0` |
 | 24 | [Get the Middle Character](https://www.codewars.com/kata/56747fd5cb988479af000028) | `7 kyu` | [getMiddleCharacter.js](./codewars-javascript/7kyu/getMiddleCharacter.js) | `Math.floor()`, `.slice()`, Modulo `% 2 === 0`, Ternary Operator `? :` |
+| 25 | [String ends with?](https://www.codewars.com/kata/51f2d1cafc9c0f745c00037d) | `7 kyu` | [stringEndWith.js](./codewars-javascript/7kyu/stringEndWith.js) | `.endsWith()`, String Slicing, Empty String Edge Case (`""`) |
