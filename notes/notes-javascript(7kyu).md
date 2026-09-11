@@ -277,3 +277,25 @@
   function solution(str, ending) {
     return str.endsWith(ending);
   }
+
+  ---
+
+### 21. ทางเลือกการตรวจสอบส่วนท้ายด้วยการตัดสตริง (Manual Slicing Approach)
+* **การจำลองการทำงานด้วย `.slice()`:**
+  * สามารถตัดข้อความส่วนท้ายมาเทียบค่าได้โดยตรง:
+    ```javascript
+    function solution(str, ending) {
+      return str.slice(str.length - ending.length) === ending;
+    }
+    ```
+  * หากตัดจากด้านหลังด้วย Index ติดลบ เช่น `str.slice(-ending.length)` ต้องระวังกรณีที่ `ending` เป็น `""` เพราะ `-0` มีค่าเท่ากับ `0` ซึ่งจะทำให้ `.slice(0)` ได้ข้อความเต็มทั้งประโยคออกมาแทน
+
+---
+
+### 22. ตารางสรุป Methods เพิ่มเติม (7 kyu Cheat Sheet Part 7)
+
+| คำสั่ง / ไวยากรณ์ | หน้าที่ | ตัวอย่างการใช้งาน | ผลลัพธ์ |
+|---|---|---|---|
+| `str.endsWith(ending)` | ตรวจสอบว่าสตริงลงท้ายด้วยข้อความที่กำหนดหรือไม่ | `"abcde".endsWith("cde")` | `true` |
+| `str.endsWith("")` | ตรวจสอบสตริงว่างเปล่า (ได้ค่าจริงเสมอ) | `"hello".endsWith("")` | `true` |
+| `str.slice(-n)` | สกัดตัวอักษร $n$ ตัวสุดท้ายของข้อความ | `"abcde".slice(-2)` | `"de"` |
