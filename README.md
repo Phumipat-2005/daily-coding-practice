@@ -35,3 +35,4 @@
 | 27 | [Isograms](https://www.codewars.com/kata/54ba84be607a923704000677) | `7 kyu` | [isograms.js](./codewars-javascript/7kyu/isograms.js) | `Set`, `.toLowerCase()`, `.size`, `str.length`, Case-Insensitive |
 | 28 | [Exes and Ohs](https://www.codewars.com/kata/55908aad6620c066bc00002a) | `7 kyu` | [exesAndOhs.js](./codewars-javascript/7kyu/exesAndOhs.js) | `.split()`, `.toLowerCase()`, RegEx `/[xo]/gi`, Safe Navigation `\|\| []` |
 | 29 | [Mumbling](https://www.codewars.com/kata/554e4a2f232cdd87d9000038) | `7 kyu` | [mumbling.js](./codewars-javascript/7kyu/mumbling.js) | `.split('')`, `.map()`, `.repeat()`, `.toUpperCase()`, `.join('-')` |
+| 30 | [Two to One](https://www.codewars.com/kata/5656b6906de340b31b00008e) | `7 kyu` | [twoToOne.js](./codewars-javascript/7kyu/twoToOne.js) | `Set`, Spread Operator `...`, `.sort()`, `.join('')`, Concatenation |
