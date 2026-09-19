@@ -38,3 +38,4 @@
 | 30 | [Two to One](https://www.codewars.com/kata/5656b6906de340b31b00008e) | `7 kyu` | [twoToOne.js](./codewars-javascript/7kyu/twoToOne.js) | `Set`, Spread Operator `...`, `.sort()`, `.join('')`, Concatenation |
 | 31 | [Jaden Casing Strings](https://www.codewars.com/kata/5390bac347d09b7da40006f6) | `7 kyu` | [jadenCasingStrings.js](./codewars-javascript/7kyu/jadenCasingStrings.js) | `String.prototype`, `this`, `.split(' ')`, `.map()`, `.slice()`, `.join(' ')` |
 | 32 | [Printer Errors](https://www.codewars.com/kata/5654198034114823fe000013) | `7 kyu` | [printerErrors.js](./codewars-javascript/7kyu/printerErrors.js) | RegEx `/[n-z]/g`, `.match()`, Safe Navigation `\|\| []`, Template Literals |
+| 33 | [Binary Addition](https://www.codewars.com/kata/551f3745012574039e00010e) | `7 kyu` | [binaryAddition.js](./codewars-javascript/7kyu/binaryAddition.js) | Arithmetic Addition, Radix Conversion, `.toString(2)` |
